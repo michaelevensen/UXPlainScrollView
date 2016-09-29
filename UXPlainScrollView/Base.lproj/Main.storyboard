@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UXPlainScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C60-io-Joz">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkD-ns-39D" userLabel="Content View">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the scrollable View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4I-gu-VYl">
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.5077323317527771" green="0.16158577799797058" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1200" id="O8q-6x-vEz"/>
+                                            <constraint firstItem="t4I-gu-VYl" firstAttribute="centerY" secondItem="wkD-ns-39D" secondAttribute="centerY" id="TLV-0L-vDq"/>
+                                            <constraint firstItem="t4I-gu-VYl" firstAttribute="centerX" secondItem="wkD-ns-39D" secondAttribute="centerX" id="qfO-sW-TOW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wkD-ns-39D" secondAttribute="trailing" id="2gS-2P-EZh"/>
+                                    <constraint firstItem="wkD-ns-39D" firstAttribute="leading" secondItem="C60-io-Joz" secondAttribute="leading" id="AwQ-mK-eng"/>
+                                    <constraint firstAttribute="bottom" secondItem="wkD-ns-39D" secondAttribute="bottom" id="GsQ-r7-MK8"/>
+                                    <constraint firstItem="wkD-ns-39D" firstAttribute="top" secondItem="C60-io-Joz" secondAttribute="top" id="lnm-UG-Qyj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C60-io-Joz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0CL-YN-QxO"/>
+                            <constraint firstItem="wkD-ns-39D" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ns2-wH-0pW"/>
+                            <constraint firstAttribute="trailing" secondItem="C60-io-Joz" secondAttribute="trailing" id="gSe-dq-Phf"/>
+                            <constraint firstItem="C60-io-Joz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kzH-D2-EHw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C60-io-Joz" secondAttribute="bottom" id="vMd-NR-SV6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="C60-io-Joz" id="Vvb-3U-5HM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
